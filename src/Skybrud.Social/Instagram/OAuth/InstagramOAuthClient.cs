@@ -110,6 +110,15 @@ namespace Skybrud.Social.Instagram.OAuth {
         }
 
         /// <summary>
+        /// Initializes an OAuth client with the specified app ID.
+        /// </summary>
+        /// <param name="appId">The ID of the app.</param>
+        public InstagramOAuthClient(long appId)
+        {
+          ClientId = appId + "";
+        }
+
+        /// <summary>
         /// Initializes an OAuth client with the specified app ID and app secret.
         /// </summary>
         /// <param name="appId">The ID of the app.</param>
